@@ -1,0 +1,49 @@
+{% extends 'template.html' %}
+
+{%  block content %}
+    <div class="tbox">
+        <form class = "posi" method="post" action=routes.search style="margin-top: 15px; height: 400px ">
+            <span style="display:block; font-size:18px; font-weight:bolder; margin-top:20px">검색 내용</span>
+            <div class= "search_box">
+                <span style="font-size:18px; font-weight:bolder; margin-right:56px;">성별</span>
+                    <input id="radio1" type="radio" name="sex" value="all">
+                    <label for="radio1">전체</label>
+                    <input id="radio2" type="radio" name="sex" value="man">
+                    <label for="radio2">남자</label>
+                    <input id="radio3" type="radio" name="sex" value="woman">
+                    <label for="radio3">여자</label>
+            </div>
+            <div class= "search_box">
+                <span style="font-size:18px; font-weight:bolder; margin-right:56px;">상의</span>
+                    <input id="radio5" type="radio" name="top" value="반팔티">
+                    <label for="radio5">반팔티</label>
+                    <input id="radio6" type="radio" name="top" value="긴팔티">
+                    <label for="radio6">긴팔티</label>
+                    <input id="radio7" type="radio" name="top" value="셔츠">
+                    <label for="radio7">셔츠</label>
+                    <input id="radio8" type="radio" name="top" value="블레이저">
+                    <label for="radio8">블레이저</label>
+                    <input id="radio9" type="radio" name="top" value="청자켓">
+                    <label for="radio9">청자켓</label>
+            </div>
+
+            <div class= "search_box">
+                <span style="font-size:18px; font-weight:bolder; margin-right:56px;">하의</span>
+                    <input id="radio27" type="radio" name="bottom" value="청바지">
+                    <label for="radio27">청바지</label>
+                    <input id="radio28" type="radio" name="bottom" value="롱치마">
+                    <label for="radio28">롱치마</label>
+                    <input id="radio29" type="radio" name="bottom" value="숏치마">
+                    <label for="radio29">숏치마</label>
+                    <input id="radio30" type="radio" name="bottom" value="면바지/슬랙스">
+                    <label for="radio30">면바지 / 슬랙스</label>
+                    <input id="radio31" type="radio" name="bottom" value="반바지">
+                    <label for="radio31">반바지</label>
+            </div>
+
+            <input type="reset" value="reset" style="margin-top:10px">
+            <input type="submit" value="Search" style="margin-top:10px">
+        </form>
+    </div>
+
+{%  endblock %}

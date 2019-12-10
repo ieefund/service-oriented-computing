@@ -1,0 +1,26 @@
+{% extends 'template.html' %}
+
+{%  block content %}
+     <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td>표지</td>
+                <td>번호</td>
+                <td>책제목</td>
+                <td>저자</td>
+                <td>가격</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in books %}
+            <tr>
+                <td> <img src="{{ book['thumbnail'] }}"/> </td>
+                <td> {{ loop.index }} </td>
+                <td>{{ book['title'] }}</td>
+                <td>{{ book['authors'] }}</td>
+                <td>{{ book['price'] }}</td>
+            </tr>
+        {%  endfor %}
+        </tbody>
+    </table>
+{%  endblock %}

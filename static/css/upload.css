@@ -1,0 +1,181 @@
+
+.inner-forms {
+  background: #FFF;
+  padding: 10px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.joinTemp {
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+body {
+  background: #F9F8F8;
+}
+
+  .sy {
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    color:#2a2a2a;
+    background:#ffffff;
+    padding: 15px 5px 15px 5px;
+    border-bottom:1px solid #dddddd;
+    font-size: 23px;
+  }
+
+
+.step-wrapper {
+  padding: 20px 0;
+  display: none;
+}
+
+.step-wrapper.active {
+  display: block;
+}
+
+.step-indicator {
+  border-collapse: separate;
+  display: table;
+  margin-left: 0px;
+  position: relative;
+  table-layout: fixed;
+  text-align: center;
+  vertical-align: middle;
+  padding-left: 0;
+  padding-top: 20px;
+}
+
+.step-indicator li {
+  display: table-cell;
+  position: relative;
+  float: none;
+  padding: 0;
+  width: 1%;
+}
+
+.step-indicator li:after {
+  background-color: #ccc;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  width: 100%;
+  top: 32px;
+}
+
+.step-indicator li:after {
+  left: 50%;
+}
+
+.step-indicator li:last-child:after {
+  display: none;
+}
+
+.step-indicator li.active .step {
+  border-color: #4183D7;
+  color: #4183D7;
+}
+
+.step-indicator li.active .caption {
+  color: #4183D7;
+}
+
+.step-indicator li.complete:after {
+  background-color: #87D37C;
+}
+
+.step-indicator li.complete .step {
+  border-color: #87D37C;
+  color: #87D37C;
+}
+
+.step-indicator li.complete .caption {
+  color: #87D37C;
+}
+
+.step-indicator .step {
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  color: #ccc;
+  font-size: 24px;
+  height: 64px;
+  line-height: 64px;
+  margin: 0 auto;
+  position: relative;
+  width: 64px;
+  z-index: 1;
+}
+
+.step-indicator .step:hover {
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #585858;
+  border: 2px solid #585858;
+}
+
+
+.step-indicator .caption {
+  color: #ccc;
+  padding: 11px 16px;
+}
+
+.back {
+  width: 60%;
+  margin: auto;
+  background: white;
+}
+.joinTemp {
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alignstyle.sy {
+  overflow: hidden;
+  margin-left:340px;
+  margin-top: 25px;
+ }
+.alignstyles.sy {
+  overflow: hidden;
+  right: 0;
+  text-align: center;
+  margin-top: 10px;
+
+}
+.alignstyless {
+  margin-top: 10px;
+  overflow: hidden;
+  right: 0;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+  color:black;
+}
+
+.styles {
+  color:black;
+}
+.namesInput {
+  float: right;
+  width: 80% !important;
+}
+.rgButton {
+  float: right;
+
+}
+.instro {
+  width: 419.56px;
+  height: 481.45px;
+}
+.form-group {
+    /* padding-bottom: 10px; */
+    position: relative;
+    margin: 5px 0 0;
+}

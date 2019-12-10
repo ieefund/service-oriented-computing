@@ -1,0 +1,51 @@
+.main_thu {
+    width: 60px;
+    position: relative;
+    top: -5px;
+}
+.main_nickname {
+    position: relative;
+    top: -64px;
+    left: 68px;
+    font-size: 15px;
+}
+.main_photo {
+    width: 330px;
+}
+
+.main_user {
+    border-bottom: 1px solid #dddddd;
+    height: 80px;
+}
+.tbox {
+    width:1300px;
+    height:850px;
+    margin: 0 auto;
+    position: relative;
+    padding: 10px;
+}
+.posi {
+    position: absolute;
+    left: 20px;
+}
+.photo_box {
+    width:1050px;
+    height:750px;
+    margin: 0 auto;
+    position: relative;
+    background-color: white;
+    top:20px;
+    margin-bottom:18px;
+    padding:10px;
+    border: 1px solid #dddddd;
+    overflow-y: scroll;
+}
+.search_box {
+    width:900px;
+    margin: 0 auto;
+    margin-top:18px;
+    margin-bottom: 18px;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #dddddd;
+}

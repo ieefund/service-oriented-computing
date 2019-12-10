@@ -1,0 +1,23 @@
+<link href="/static/css/mainpage.css"/>
+{% extends 'template.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-header main_user">
+                    <h4 class="card-title"></h4>
+                    {% if 'kakao_thumbnail_image' in kakao_oauth %}
+                        <img class="main_thu" src="{{ kakao_oauth['kakao_thumbnail_image'] }}" border="0" />
+                        <dd class="main_nickname">{{ kakao_oauth['nickname'] }}</dd>
+                        <br/>
+                    {%  endif %}
+                </div>
+                <div class="card-body">
+                    <dd ><img class="main_photo" href="/img" src="{{ kakao_oauth['kakao_profile_image'] }}" border="0"/></dd>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,111 @@
+.img_hj {
+  position: absolute;
+  width: 480px;
+  height:600px;
+}
+.tbox_s {
+  width:900px;
+  height:600px;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid #dddddd;
+  background-color:white;
+  top: 80px;
+}
+.tbox_name {
+  width:420px;
+  height: 80px;
+  margin: 0 auto;
+  border-bottom: 1px solid #dddddd;
+  position: relative;
+  left: 241px
+}
+.tbox_content {
+  width:420px;
+  height: 120px;
+  margin: 0 auto;
+  border-bottom: 1px solid #dddddd;
+  position: relative;
+  left: 241px
+}
+.size_hj {
+  margin-top:15px;
+  margin-left:15px;
+  width:50px;
+  height:50px;
+}
+.font_hj {
+  font-size: 18px;
+  margin-left: 15px;
+}
+.comment_box {
+  width: 419px;
+  height: 60px;
+  padding: 16px;
+  border-top: 1px solid #dddddd;
+  border-left: 0px;
+  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+.comment_box1 {
+  width: 419px;
+  height: 400px;
+  position: relative;
+  left: 241px;
+  margin-left: 239px;
+  overflow-y: scroll;
+}
+.like_box {
+  width: 419px;
+  height: 60px;
+  padding: 16px;
+  border-top: 1px solid #dddddd;
+  border-left: 0px;
+  border-right: 1px solid #dddddd;
+}
+.likebuttons {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+.comment_font_hj {
+  padding: 10px;
+  margin-left: 5px;
+  margin: 0px auto;
+}
+
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+.btnnn-hj {
+  text-transform: capitalize;
+  border: 1px solid black;
+  color: black;
+  background: white;
+  padding: 5px 15px 5px 15px;
+  font-weight: 600;
+  margin-left: 1120px;
+  border-radius: 5px;
+}
+.thum_box_content {
+    position: relative;
+    bottom: 48px;
+    left: 60px;
+}

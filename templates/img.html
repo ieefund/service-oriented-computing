@@ -1,0 +1,43 @@
+{% extends 'template.html' %}
+
+{%  block content %}
+    <div class="tbox_s">
+        <img class="img_hj" src="{{ kakao_oauth['kakao_profile_image'] }}">
+        <div class="tbox_name">
+            <img class="size_hj" src="{{ kakao_oauth['kakao_thumbnail_image'] }}">
+            <div class="thum_box_content">
+                <span class="font_hj"> {{ kakao_oauth['nickname'] }} </span>
+                <br>
+                <span class="font_hj"> #남자 #상의 #LA </span>
+            </div>
+
+        </div>
+        <div class="comment_box1" id="style-1">
+            {% for message in messages %}
+                <tr>
+                    <td class="comment_font_hj"> {{ messages[message].body }}</td>
+                </tr>
+            {% endfor %}
+        </div>
+        <div class="tbox_content">
+            <div class="like_box">
+                <img class="likebuttons" src="https://cdn3.iconfinder.com/data/icons/streamline-icon-set-free-pack/48/Streamline-63-256.png">
+                <span style="display:none"></span>
+                <span class="hi"> 13 </span>
+                <span> 명이 좋아합니다.</span>
+            </div>
+            <td>
+                <form class="add-comment" method="post" action="/submit_message">
+                    <div class="form-group form-inline">
+                        <input class="comment_box" name="message"
+                               id="comment" type="text" placeholder="댓글 달기">
+                        <button type="submit" class="primary-btn text-uppercase"> 게시 </button>
+                    </div>
+                </form>
+            </td>
+
+
+        </div>
+    </div>
+
+{%  endblock %}
